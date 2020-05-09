@@ -1,0 +1,321 @@
+/*declarando variables*/
+:root{
+    --color1: rgb(45, 106, 236);
+    --color2: rgba(23, 180, 83, 0.877);
+    --color3: rgba(35, 143, 153, 0.623);
+    --color4: rgb(44, 43, 43);
+    --fondo: #f2f2f2;
+    --titulos: 33px;
+    --margenes: 60px;
+    --espacios: 10px;
+    --espacios-contenido:45px;
+    --subtitulos: 20px;
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #6190E8;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #6190E8 0%, #A7BFE8 100%);
+
+    /*      theme font-family   */
+    --Abel: 'Abel', sans-serif;
+    --Anton: 'Anton', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+    --Montserrat: 'Montserrat Alternates', sans-serif;
+    --Josefin: 'Josefin Sans', sans-serif;
+    --Nunito: 'Nunito', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Header */
+header{
+    width: 100%;
+    height:500px;
+    background: url(../images/image4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header nav{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background: white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    justify-content: space-between;
+}
+
+.enlaces{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+/*enlaces que estan en el mennu*/
+nav .enlaces a{
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 10px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+    font-family: var(--Abel);
+}
+  
+nav .enlaces a:hover{
+    border-bottom: 3px solid #6190E8;
+    transition: 0.6s;
+}
+  
+nav .logo{
+    height: 100%;
+    margin-left: 50px;
+}
+nav .logo img{
+    object-fit: cover;
+    height: inherit;
+}
+  
+.icono{
+    display:none;
+    font-size: 24px;
+}
+
+/*************texto que estan en la parte principal************/
+header .textos{
+    text-align: center;
+    color: #fff;
+    margin-top: 150px;
+}
+header .textos h1{
+    font-size: 95px;
+    letter-spacing: 6px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: var(--Nunito);
+}
+header .textos h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--Abel);
+}
+header .textos h1,h3{
+    margin: .2rem;
+}
+/*********estilos para el boton************/
+header .textos a{
+    margin: 50px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-family: var(--Abel);
+}
+header .textos a:hover{
+    color: var(--white);
+    background: #6190E8;
+    transition-delay: 1s;
+    box-shadow: 0 0 10px #6190E8, 0 0 40px #6190E8, 0 0 80px #6190E8;
+}
+header .textos a span{
+    position: absolute;
+    display: block;
+}
+header .textos a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent, #6190E8);
+}
+header .textos a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+header .textos a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent, #6190E8);
+}
+header .textos a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+header .textos a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, #6190E8);
+}
+header .textos a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+header .textos a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, #6190E8);
+}
+header .textos a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/**************de aca empezamos para describir caracteristicas*******************/
+.title {
+  font-family: var(--Nunito);
+  font-size: 2.5rem;
+}
+
+.container img{
+    height: 200px;
+    width: 400px;
+}
+.container span{
+    font-family: var(--Abel);
+}
+
+.header-content .text {
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text-center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background: #fff;
+  color: #0f0f0f;
+}
+.bg-night{
+    background: #00121b;
+    color: #fff;
+}
+.bg-night .title span{
+    color: rgb(201, 199, 199);
+}
+
+/* RESPONSIVE */
+@media (max-width: 560px) {
+
+  .header-content .text {
+    display: none;
+  }
+  
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .container img{
+      text-align: center;
+      width: 200px;
+      height: 200px;
+  }
+}
+
+/* Landscape */
+@media(max-height: 500px) {
+  .header-content .title, .header-content .text {
+    display: none;
+  }
+  .header-content {
+    top: 0;
+  }
+}
+
+/*control cuando la pagina este en un dispositivo*/
+@media screen and (max-width:750px){
+    .icono{
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+        color: rgb(83, 81, 81);
+        z-index: 100;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+    #enlaces a{
+        color: white;
+    }
+    
+    header .textos h1{
+        font-size: 95px;
+    }
+
+    .enlaces{
+        position: fixed;
+        height: 40vh;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        transition: all 1s ease;
+        background: #6190E8;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #A7BFE8, #6190E8); 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .uno{
+        -webkit-clip-path: circle(0% at 100% 0%);
+        clip-path: circle(0% at 100% 0%);
+    }
+    .dos{
+        -webkit-clip-path: circle(150% at 100% 0%);
+        clip-path: circle(150% at 100% 0%);
+    }
+}
+
+@media screen and (max-width:400px){
+    nav .logo{
+        margin-left: 20px;
+    }
+    .icono{
+        margin-right: 20px;
+    }
+    header .textos h1{
+        font-size: 65px;
+    }
+}
