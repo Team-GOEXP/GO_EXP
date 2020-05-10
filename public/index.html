@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GOEXP</title>
+
+    <!----------------Scripts-------------------->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!------------Referencias de estilos------------->>
     <link rel="shortcut icon" href="./images/logo.png">
     <link rel="stylesheet" href="./styles/all.css">
     <link rel="stylesheet" href="./styles/estilos.css">
     <link rel="stylesheet" href="./styles/estilo-footer.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <!--Owl-Carousel-->
     <link rel="stylesheet" href="./styles/owl.carousel.min.css">
     <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
@@ -18,11 +25,14 @@
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    
     <!-----------------------------font awesome-------------------------------------->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body class="hidden">
     <!--Agregamos el menu dentro de un header-->
+
     <header>
         <nav>
             <div class="logo">
@@ -146,8 +156,48 @@
             </div>
         </div>
     </div>
+
+    <!-------------------------------------modal-------------------------------------------->
+
+    <div class="modal fade" id="mostrarmodall">
+      <div class="container">
+        <div class="modal-background">
+            <div class="modal-container" >
+              <div class="modal-content">
+                <span data-dismiss="modal" class="cerrar">X</span>
+                <h1>Go EXP</h1>
+                <div class="separador"></div>
+                <div class="tres-columnas">
+                  <table>
+                    <tr>
+                      <td>
+                        <h2>Explorador</h2>
+                        <p>Descubre cientos de experiencias alrededor del mundo.</p>
+                      </td>
+                      <td>
+                        <h2>Experto</h2>
+                        <p>Si eres un experto en lo que te apasiona estás listo para empezar a generar una experiencia.</p>
+                      </td>
+                      <td>
+                        <h2>Experiencia</h2>
+                        <p>Momento en el cual un experto da a conocer ante un explorador una experiencia única basada en sus pasiones.</p>
+                      </td>
+                    </tr>
+                  </table> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <script src="./scripts/main.js"></script>
     <script src="./scripts/jquery.min.js"></script>
     <script src="./scripts/owl.carousel.min.js"></script>
+    <script src="./scripts/modal.js"></script>
+    
+
 </body>
 </html>
