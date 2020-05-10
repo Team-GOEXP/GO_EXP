@@ -1,4 +1,5 @@
+
 $(document).ready(function()
       {
-        $("#mostrarmodall").modal("show");
+        $("#mostrarmodal").modal("show");
       });

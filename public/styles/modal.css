@@ -1,5 +1,5 @@
 
-/***********************modal********************/
+
 
 *{
     margin: 0;
@@ -49,7 +49,7 @@
     border: 1px solid #999;
     background-size: 100% 100%;
     background-repeat:no-repeat;
-    background:url(images/image5.jpg);
+    background:url(img/image5.jpg);
     background-size: cover;
 }
 
@@ -145,3 +145,6 @@
     font-size: 15px;
     text-align: center;
 }
+
+
+
