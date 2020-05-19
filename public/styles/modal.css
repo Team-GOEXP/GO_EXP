@@ -1,0 +1,150 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+    background: rgba(55, 93, 165, .05);
+}
+
+.modal-background
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .5);
+    transition: .2s;
+
+}
+
+.show
+{
+    opacity: 1 !important;
+    z-index: 9999 !important;
+}
+
+.modal-container
+{
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 1;
+    margin:10px auto;
+    border: 1px solid #999;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(img/image5.jpg);
+    background-size: cover;
+}
+
+.modal-content
+{
+    position: relative;
+    padding-top: 50px;
+}
+
+.modal-content .cerrar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid rgba(255, 255, 255,.5);
+}
+
+.modal-content .cerrar:hover
+{
+    border: 1px solid rgba(255, 255, 255,2);
+    transform: translayeY(-4px);
+}
+
+.modal-content h1
+{
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+}
+
+
+
+.modal-content .separador
+{
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+@media (min-width: 400px) 
+{
+    .modal-container .modal-content {
+      width: 400px;
+    }
+}
+
+@media (min-width: 750px)
+{
+    .modal-container .modal-content {
+      width: 600px;
+    }
+}
+
+@media (min-width: 1200px) 
+{
+    .modal-container .modal-content  {
+       width: 700px;
+    }
+}
+
+.tres-columnas td
+{
+    margin: 30px;
+    margin: 2rem;
+    
+}
+
+
+.tres-columnas td>h2
+{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color: white;
+    padding: 10px;
+
+}
+
+.tres-columnas td>p
+{
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family:'nunito', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
