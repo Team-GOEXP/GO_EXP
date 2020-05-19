@@ -15,6 +15,7 @@
     --bg-color: #0f0f0f;
     --white: #ffffff;
     --midnight: #6190E8;
+    --color-dark-xx:#1f231f;
 
     /* gradient color   */
     --sky: linear-gradient(120deg, #6190E8 0%, #A7BFE8 100%);
@@ -202,20 +203,21 @@ header .textos a:hover span:nth-child(4){
 }
 
 .header-content .text {
-  line-height: 1.7;
+  line-height: 1.1;
   margin-top: 1rem;
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
-  overflow: hidden;
-  padding: 4rem 1rem;
+    height: 10px;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
 }
 
 .grid-2 {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -229,7 +231,7 @@ header .textos a:hover span:nth-child(4){
   color: #0f0f0f;
 }
 .bg-night{
-    background: #00121b;
+    background: var(--color-dark-xx);
     color: #fff;
 }
 .bg-night .title span{
